@@ -1,0 +1,2 @@
+const{Core,Events}=Global;customElements.define("main-nav-mobile-loader",class extends Core{elements={$:[["level"]]};render(){customElements.whenDefined("main-nav-mobile").then(()=>{this.pub(Events.HEADER_UPDATE,this._getLevels()),this.remove()})}_getLevels(){return this.$("level").map(item=>({level:+item.dataset.level,children:item.childNodes}))}});
+//# sourceMappingURL=/cdn/shop/t/17/assets/main-nav-mobile-loader.js.map?v=110411130173839683061718817532
